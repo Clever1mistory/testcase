@@ -47,6 +47,9 @@ class CourseSemester(models.Model):
         verbose_name = 'Семестр курса'
         verbose_name_plural = 'Семестры курсов'
 
+    def __str__(self):
+        return self.course
+
 
 class Semester(models.Model):
     semesters_number = models.PositiveIntegerField()
@@ -54,6 +57,9 @@ class Semester(models.Model):
     class Meta:
         verbose_name = 'Семестр'
         verbose_name_plural = 'Семестры'
+
+    def __str__(self):
+        return self.semesters_number
 
 
 class Teacher(models.Model):
