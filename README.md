@@ -20,9 +20,12 @@
    virtualenv env
    source env/bin/activate
 ```
-4. Установите зависимости, указанные в файле requirements.txt.
+4. Установите зависимости, указанные в файле requirements.txt и перейдите в testapp.
 ```
    pip install -r requirements.txt
+```
+```
+cd testapp
 ```
 5. Настройте подключение к базе данных PostgreSQL.
    - Откройте файл settings.py и установите параметры подключения к вашей базе данных в разделе DATABASES.
