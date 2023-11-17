@@ -48,7 +48,7 @@ class CourseSemester(models.Model):
         verbose_name_plural = 'Семестры курсов'
 
     def __str__(self):
-        return self.course
+        return self.course.name
 
 
 class Semester(models.Model):

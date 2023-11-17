@@ -22,8 +22,8 @@ class CourseAdmin(admin.ModelAdmin):
 
 @admin.register(CourseSemester)
 class CourseSemesterAdmin(admin.ModelAdmin):
-    list_display = ('course', 'semester', 'start_date', 'end_date')
-    list_filter = ('course', 'semester', 'start_date', 'end_date')
+    list_display = ('course', 'start_date', 'end_date')
+    list_filter = ('start_date', 'end_date')
 
 
 @admin.register(Semester)
